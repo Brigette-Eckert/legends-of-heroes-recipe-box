@@ -8,8 +8,8 @@ import { Recipe } from './recipe.model'
 })
 export class AppComponent {
   recipes: Recipe[] = [
-    new Recipe('Simple Omelet', ['Fresh Eggs x 1', 'Coarse Rock Salt x 1'],
-      ['Superb Dish: Soft & Fluffy Omelet - Recovers 100 HP & Cures KO', 'Regular Dish: ', 'Peculiar Dish: ', 'Unique Dish: '],
+    new Recipe('Simple Omelet', ['Fresh Eggs x 1', ' Coarse Rock Salt x 1'],
+      ['Superb Dish: Soft & Fluffy Omelet - Recovers 100 HP & Cures KO ', 'Regular Dish: ', 'Peculiar Dish: ', 'Unique Dish: '],
       ['Rean: ', 'Alisa: ', 'Elliot: ', 'Machias: ', 'Emma: ', 'Jusis: ', 'Fie: ', 'Gaius: ', 'Crow: ', 'Millium: '],
       ''),
     new Recipe('', [''],
