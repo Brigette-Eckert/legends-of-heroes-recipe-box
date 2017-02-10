@@ -4,6 +4,7 @@
  ```
  
  Practiced using Angular 2 and Angular Cli
+ Praticed using bootstrap 
  
 ```
 #User Stories
