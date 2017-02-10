@@ -1,3 +1,20 @@
 <h1>
-  {{title}}
+  Legends of Heroes:  Trails of Cold Steel:  Recipe Box
 </h1>
+
+<div *ngFor="let currentRecipe of recipes">
+  <h2> {{currentRecipe.name}} </h2>
+  <b> Ingredients: </b>
+  <ul>
+    <li>{{currentRecipe.ingredients}}</li>
+  </ul>
+  <b>Results: </b>
+  <ul>
+    <li>{{currentRecipe.results}}</li>
+  </ul>
+  <b> Party Member Skills: </b>
+  <ul>
+    <li>{{currentRecipe.skills}}</li>
+  </ul>
+  <b> Where to find:</b> {{currentRecipe.origin}}
+</div>
