@@ -1,11 +1,38 @@
-h1 {
+#book-heading {
   color: #ffffff;
   text-decoration: underline;
   background: #8E0000;
   text-align: center;
   font-weight: bold;
+  max-width: 50%;
+  margin: 50px auto;
+  height: 100px;
+  transform: skewY(-4deg);
+  padding: 20px;
 }
+
 
 h3{
   color: #8E0000;
+}
+
+#logo-image {
+  max-width: 100%;
+}
+
+#logo-image img {
+  height: 250px;
+  margin: auto;
+}
+
+/*.row {*/
+/*background: ;*/
+/*}*/
+
+.sub-heading {
+  background-color: #8293af;
+  border: 5px groove white;
+  height: 50px;
+  padding: 5%;
+  border-radius: 40%;
 }
