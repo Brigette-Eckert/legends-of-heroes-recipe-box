@@ -1,20 +1,34 @@
 <h1>
-  Legends of Heroes:  Trails of Cold Steel:  Recipe Book
+  Legends of Heroes: Trails of Cold Steel <br/>  Recipe Book
 </h1>
 
-<div *ngFor="let recipe of recipes">
-  <h2> {{recipe.name}} </h2>
-  <b> Ingredients: </b>
-  <ul>
-    <li *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</li>
-  </ul>
-  <b>Results: </b>
-  <ul>
-    <li *ngFor="let result of recipe.results">{{result}}</li>
-  </ul>
-  <b> Party Member Skills: </b>
-  <ul>
-    <li *ngFor="let skill of recipe.skills">{{skill}}</li>
-  </ul>
-  <b> Where to Find the Recipe:</b> {{recipe.origin}}
+<div *ngFor="let recipe of recipes" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-3">
+      <div class="recipe-heading">
+        <h3> {{recipe.name}} </h3>
+      </div>
+      <div class="ingredients">
+        <b> Ingredients: </b>
+          <ul>
+            <li *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</li>
+          </ul>
+      </div>
+      <div class="results">
+        <b>Results: </b>
+          <ul>
+            <li *ngFor="let result of recipe.results">{{result}}</li>
+        </ul>
+      </div>
+      <div class="skils">
+        <b> Party Member Skills: </b>
+          <ul>
+            <li *ngFor="let skill of recipe.skills">{{skill}}</li>
+          </ul>
+      </div>
+      <div class="origin">
+        <b> Where to Find the Recipe:</b> {{recipe.origin}}
+      </div>
+    </div>
+  </div>
 </div>

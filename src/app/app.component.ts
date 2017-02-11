@@ -16,7 +16,7 @@ export class AppComponent {
       'Comes with Recipe Book'),
     new Recipe(
       'Sweet Cookie',
-      ['Fresh Egg x 1', 'Honey Syrup', 'Hearty Powder'],
+      ['Fresh Egg x 1', 'Honey Syrup x 1', 'Hearty Powder x 1'],
       ['Superb Dish: Royal Sable - Recovers 1000 HP & Cures Poison', 'Regular Dish: Sweet Cookie -  Recovers 700 HP', 'Peculiar Dish: Ooze Cookie - Attack (Set) Area- (S) ', 'Unique Dish: White Cookie - Restores 800 HP & Cures Poison/ Burn'],
       ['Rean: Average', 'Alisa: Excellent', 'Elliot: Average', 'Laura: Poor', 'Machias: Average', 'Emma: Great', 'Jusis: Average', 'Fie: Good', 'Gaius: Poor', 'Crow: Average', 'Millium: Good'],
       'Speak to Margot at the Weathercock Inn on April 24th.'),
@@ -76,13 +76,13 @@ export class AppComponent {
       '	Speak to Rinoie, the clerk that works at Weston House (Inside Plaza Bifrost, west) on July 24th'),
     new Recipe(
       'Fried Fish',
-      ['Fresh Egg x 1', 'Coarse Rock Salt x 1', 'Assorted Grains x 1', 'White Beast Flesh x 1', 'Globby Fat x 1'],
+      ['Fresh Egg x 1', 'Coarse Rock Salt x 1', 'Assorted Grains x 1', 'White Beast Flesh x 2', 'Globby Fat x 1'],
       ['Superb Dish: Elegant Fried Fish	- Recovers 4000 HP & SPD +25% (5 Turns)', 'Regular Dish: Fried Fish -	Recovers 3000 HP & SPD +25% (3 Turns)', 'Peculiar Dish: Roasted Fry-up	- Attack (Set) - Area (S) (Power C) Burn (50 %)', 'Unique Dish: Fish Nuggets -	Recovers 3600 HP & SPD +50% (3 Turns)'],
       ['Rean: Average', 'Alisa: Average', 'Elliot: Average', 'Laura: Great', 'Machias: Poor', 'Emma: Average', 'Jusis: Good', 'Fie: Excellent', 'Gaius: Great', 'Crow: Good', 'Millium: Poor'],
       'Speak to Gamgee at Gamgees Pub (Ost District) on July 25th after watching Machias Event'),
     new Recipe(
       'Custard Pudding',
-      ['Fresh Egg x 1', 'Fresh Milk x 1', 'Honey Syrup  x 1', 'Clear Gelatin x 1'],
+      ['Fresh Egg x 2', 'Fresh Milk x 1', 'Honey Syrup  x 1', 'Clear Gelatin x 2'],
       ['Superb Dish: Wobbly Pudding	- Recovers 2600 HP & ATS / ADF +25% (5 Turns)', 'Regular Dish: Custard Pudding	- Recovers 1800 HP & ATS / ADF +25% (3 Turns)', 'Peculiar Dish: Egg Custard Pudding	- Recovers 600 HP & Insight (5 Turns)', 'Unique Dish: Dish	Quartet Pudding	Recovers 1400 HP & STR/ DEF / ATS / ADF +25% (4 Turns)'],
       ['Rean: Average', 'Alisa: Great', 'Elliot: Excellent', 'Laura: Average', 'Machias: Good', 'Emma: Good', 'Jusis: Poor', 'Fie: Poor', 'Gaius: Average', 'Crow: Average', 'Millium: Great'],
       'Speak to Ramsay in the Kitchen Area of the  Student Union Building on August 22nd'),
