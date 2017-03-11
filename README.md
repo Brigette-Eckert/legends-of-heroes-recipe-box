@@ -10,6 +10,10 @@
 #User Stories
 
 ```
+1. As a user, I want to see only the title of each recipe when I first visit the page
+2. As a user, I want to click a recipe's title to see its other details; like the ingredients and instructions.
+3. As a user, I want to be able to hide a recipe's details when I'm done viewing them.
+4. As a user, I want to edit my recipes if I need to. I'd like to see changes reflected live on the page as I make them.
 ```
 
 #Future Features/To Do: 
