@@ -1,4 +1,5 @@
 export class Recipe {
+  public isActive: boolean = false;
   constructor(
     public name: string,
     public ingredients: Array<string>,

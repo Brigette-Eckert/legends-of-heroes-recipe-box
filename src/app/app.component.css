@@ -11,6 +11,9 @@
   padding: 20px;
 }
 
+.sub-heading b {
+ color: white;
+}
 
 h3{
   color: #8E0000;
@@ -27,7 +30,12 @@ h3{
 
 .recipe-card {
   background-color: #e1e4ea;
+  padding: 2%;
   margin-top: 2%;
+}
+
+.details {
+  background-color: #e1e4ea;
   height: 750px;
 }
 
