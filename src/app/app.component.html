@@ -6,7 +6,7 @@
   <div class="row">
     <div class="recipe-card">
       <div class="recipe-heading text-center">
-        <h3 (click)="displayRecipe"> [ {{recipe.name}} ] </h3>
+        <h3 (click)="toggleDisplay"> [ {{recipe.name}} ] </h3>
       </div>
       <div *ngIf="isActive" class="details">
         <div class="ingredients">

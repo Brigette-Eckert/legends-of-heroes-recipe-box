@@ -129,4 +129,10 @@ export class AppComponent {
       ['Rean: Average', 'Alisa: Excellent', 'Elliot: Good', 'Laura: Average', 'Machias: Poor', 'Emma: Great', 'Jusis: Average', 'Fie: Good', 'Gaius: Good', 'Crow: Average', 'Millium: Poor'],
       'Speak to Nicolas in the EC Room (Main Building 2F) on October 23rd (Evening).')
   ];
+
+  selectedRecipe: Recipe = this.recipes[0];
+
+  toggleDisplay(selectedRecipe){
+    console.log(selectedRecipe.isActive);
+  }
 }
