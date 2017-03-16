@@ -132,7 +132,17 @@ export class AppComponent {
 
   selectedRecipe: Recipe = this.recipes[0];
 
-  toggleDisplay(selectedRecipe){
-    console.log(selectedRecipe.isActive);
+  toggleDisplay(){
+    console.log(this.selectedRecipe.isActive);
+    if(this.selectedRecipe.isActive == true){
+       this.selectedRecipe.isActive = false;
+    }else{
+       this.selectedRecipe.isActive = true;
+    }
+  }
+
+  editRecipe(){
+    console.log(this.selectedRecipe.name);
+    console.log("edit")
   }
 }

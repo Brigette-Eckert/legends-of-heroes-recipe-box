@@ -41,6 +41,7 @@ h3{
 
 .recipe-heading {
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .sub-heading {
@@ -66,4 +67,17 @@ h3{
   float: right;
   width: 40%;
   clear: right;
+}
+
+.recipe-details {
+  overflow: auto;
+}
+
+.edit-btn {
+  float: right;
+  clear: both;
+}
+
+.editForm {
+  clear: both;
 }

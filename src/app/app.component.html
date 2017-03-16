@@ -5,10 +5,10 @@
 <div *ngFor="let recipe of recipes" class="container">
   <div class="row">
     <div class="recipe-card">
-      <div class="recipe-heading text-center">
-        <h3 (click)="toggleDisplay"> [ {{recipe.name}} ] </h3>
+      <div class="recipe-heading text-center" (click)="toggleDisplay()">
+        <h3> [ {{recipe.name}} ] </h3>
       </div>
-      <div *ngIf="isActive" class="details">
+      <div class="recipe-details">
         <div class="ingredients">
           <div class="sub-heading">
             <b> Ingredients: </b>
@@ -38,6 +38,18 @@
           <ul>
             <li *ngFor="let skill of recipe.skills">{{skill}}</li>
           </ul>
+        </div>
+        <button class="edit-btn" (click)="editRecipe()"> Edit </button>
+        <div class="editForm">
+          <form #f="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+            <label> Name <input type="text"> </label>
+            <label> Ingredients <input type="text"> </label>
+
+            <label>Results <input type="text"> </label>
+            <label>Skills <input type="text"> </label>
+            <label> Origin <input type="text"> </label>
+            <button type="submit">Save</button>
+          </form>
         </div>
       </div>
   </div>
