@@ -130,19 +130,27 @@ export class AppComponent {
       'Speak to Nicolas in the EC Room (Main Building 2F) on October 23rd (Evening).')
   ];
 
+//needs to be [i] not [0] way to do without loop? - or needs to be w/e is clicked on
   selectedRecipe: Recipe = this.recipes[0];
 
   toggleDisplay(){
-    console.log(this.selectedRecipe.isActive);
     if(this.selectedRecipe.isActive == true){
        this.selectedRecipe.isActive = false;
     }else{
        this.selectedRecipe.isActive = true;
     }
+    console.log(this.selectedRecipe.isActive);
+    return this.selectedRecipe.isActive;
   }
 
+  //need to get array from form for results, skill and ingredients
   editRecipe(){
-    console.log(this.selectedRecipe.name);
-    console.log("edit")
+    if(this.selectedRecipe.editMode == true){
+      this.selectedRecipe.editMode = false;
+    }else{
+      this.selectedRecipe.editMode = true;
+    }
+    console.log(this.selectedRecipe.editMode);
+    return this.selectedRecipe.editMode
   }
 }

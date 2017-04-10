@@ -8,7 +8,7 @@
       <div class="recipe-heading text-center" (click)="toggleDisplay()">
         <h3> [ {{recipe.name}} ] </h3>
       </div>
-      <div class="recipe-details">
+      <div class="recipe-details" *ngIf="recipe.isActive">
         <div class="ingredients">
           <div class="sub-heading">
             <b> Ingredients: </b>
@@ -41,14 +41,18 @@
         </div>
         <button class="edit-btn" (click)="editRecipe()"> Edit </button>
         <div class="editForm">
-          <form #f="ngForm" (ngSubmit)="onSubmitTemplateBased()">
-            <label> Name <input type="text"> </label>
-            <label> Ingredients <input type="text"> </label>
-
-            <label>Results <input type="text"> </label>
-            <label>Skills <input type="text"> </label>
-            <label> Origin <input type="text"> </label>
-            <button type="submit">Save</button>
+          <!--array inputs not updating properly-->
+          <form #f="ngForm" *ngIf="recipe.editMode">
+            <label for="name"> Name </label>
+             <input id="name" type="text" value = "{{ recipe.name}}" [(ngModel)]="recipe.name" name="name">
+            <label for="ingredients"> Ingredients </label>
+            <input id="ingredients" type="text" [(ngModel)]="recipe.ingredients" name="ingredients"> <br/>
+            <label for="results">Results </label>
+            <input id="results" type="text" [(ngModel)]="recipe.results" name="results">
+            <label for="skills"> Skills </label>
+            <input id="skills" type="text" [(ngModel)]="recipe.skills" name="skills"> <br/>
+            <label for="origin"> Origin </label>
+            <input id="origin" type="text" [(ngModel)]="recipe.origin" name="origin"> <br/>
           </form>
         </div>
       </div>
