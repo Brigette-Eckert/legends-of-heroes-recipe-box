@@ -5,7 +5,7 @@
 <div *ngFor="let recipe of recipes" class="container">
   <div class="row">
     <div class="recipe-card">
-      <div class="recipe-heading text-center" (click)="toggleDisplay()">
+      <div class="recipe-heading text-center" (click)="toggleDisplay(recipe)">
         <h3> [ {{recipe.name}} ] </h3>
       </div>
       <div class="recipe-details" *ngIf="recipe.isActive">
@@ -39,7 +39,7 @@
             <li *ngFor="let skill of recipe.skills">{{skill}}</li>
           </ul>
         </div>
-        <button class="edit-btn" (click)="editRecipe()"> Edit </button>
+        <button class="edit-btn" (click)="editRecipe(recipe)"> Edit </button>
         <div class="editForm">
           <!--array inputs not updating properly-->
           <form #f="ngForm" *ngIf="recipe.editMode">
