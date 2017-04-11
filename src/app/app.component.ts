@@ -130,9 +130,9 @@ export class AppComponent {
       'Speak to Nicolas in the EC Room (Main Building 2F) on October 23rd (Evening).')
   ];
 
-//needs to be [i] not [0] way to do without loop? - or needs to be w/e is clicked on
   selectedRecipe: Recipe = this.recipes[0];
 
+  //clicked recipe is named recipe in html bc of for recipe in recipes
   toggleDisplay(clickedRecipe){
     this.selectedRecipe = clickedRecipe;
     if(this.selectedRecipe.isActive == true){

@@ -41,7 +41,6 @@
         </div>
         <button class="edit-btn" (click)="editRecipe(recipe)"> Edit </button>
         <div class="editForm">
-          <!--array inputs not updating properly-->
           <form #f="ngForm" *ngIf="recipe.editMode">
             <label for="name"> Name </label>
              <input id="name" type="text" value = "{{ recipe.name}}" [(ngModel)]="recipe.name" name="name">
