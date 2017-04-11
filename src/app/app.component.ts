@@ -145,6 +145,7 @@ export class AppComponent {
   }
 
   //need to get array from form for results, skill and ingredients
+  //doesn't seem to be a typescript error, get same error even if use type any.
   editRecipe(clickedRecipe){
     this.selectedRecipe = clickedRecipe;
     if(this.selectedRecipe.editMode == true){
